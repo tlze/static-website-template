@@ -1,3 +1,5 @@
+@use 'colors';
+
 *,
 ::before,
 ::after {
@@ -14,8 +16,8 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: $subtle-bg;
-    color: $default-font;
+    background-color: colors.$subtle-bg;
+    color: colors.$default-font;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -24,7 +26,7 @@ a {
     transition: 0.1s linear;
 
     &:hover {
-        color: $primary;
+        color: colors.$primary;
     }
 }
 
